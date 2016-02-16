@@ -32,6 +32,11 @@ function addItem2XML (date, tool, format, locale) {
 }
 
 function parseQuery (query) {
+  // console.log(/[0-9]/.test(query));
+  if (!/[0-9]/.test(query)) {
+    return moment();
+  }
+
   const regString = /([\-\+]?\d{1,})([dwmqy])?/i;
   const dateString = /(\d{1,2})[\.|\-|\/](\d{1,2})[\.|\-|\/]?(\d{2,4})?/;
   const matchArray = query.match(regString);
@@ -96,8 +101,9 @@ const formatList = [{
   locale: 'zh-tw'
 }];
 
+const parsedQuery = parseQuery(query);
 formatList.forEach(format => {
-  addItem2XML(parseQuery(query), format.tool, format.format, format.locale);
+  addItem2XML(parsedQuery, format.tool, format.format, format.locale);
 });
 
 console.log(xml.end({

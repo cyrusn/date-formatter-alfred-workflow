@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string></string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>D11C2809-4043-4673-8537-F34D7657618E</key>
@@ -21,7 +23,7 @@
 	<key>createdby</key>
 	<string>CyrusN</string>
 	<key>description</key>
-	<string></string>
+	<string>A date formatter for Alfred workflow on OSX</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -61,15 +63,15 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Adding days, weeks, months, quarter or years on today</string>
+				<string>parsing query ...</string>
 				<key>script</key>
-				<string>/usr/local/bin/node ./date-formatter-alfred-workflow/index.js {query}</string>
+				<string>/usr/local/bin/node ./index.js {query}</string>
 				<key>subtext</key>
-				<string>e.g.  -1d, +2w, -3m, +4q, -5y  ... | DD.MM.YY</string>
+				<string>e.g.  number 1-31 | -1d, +2w, -3m, +4q, -5y  ... | DD.MM.YY</string>
 				<key>title</key>
 				<string>date</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -97,6 +99,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/cyrusn/date-formatter-alfred-workflow</string>
 </dict>
 </plist>
