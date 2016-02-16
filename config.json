@@ -1,0 +1,27 @@
+[{
+  "tool": "chinese-date-formatter",
+  "format": "full"
+}, {
+  "tool": "chinese-date-formatter",
+  "format": "simple"
+}, {
+  "tool": "moment",
+  "format": "ddd, D MMM YY"
+}, {
+  "tool": "moment",
+  "format": "D.M.YY (dd)"
+}, {
+  "tool": "moment",
+  "format": "DD/MM/YY (dd)"
+}, {
+  "tool": "moment",
+  "format": "YYYY-MM-DD"
+}, {
+  "tool": "moment",
+  "format": "YYYY年M月D日 (dd)",
+  "locale": "zh-tw"
+}, {
+  "tool": "moment",
+  "format": "D.M.YY (dd)",
+  "locale": "zh-tw"
+}]

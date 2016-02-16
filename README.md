@@ -8,7 +8,7 @@
       - remove the `info.plist`
       - run `git clone https://github.com/cyrusn/date-formatter-alfred-workflow.git .`
       - run `npm install`
-- select `copy to Clipboard` as outputs
+- restart alfred
 
 ## Example
 

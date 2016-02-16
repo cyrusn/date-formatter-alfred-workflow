@@ -9,9 +9,12 @@
     "xmlbuilder": "^3.0.0"
   },
   "devDependencies": {
+    "istanbul": "^0.4.2",
+    "tape": "^4.4.0"
   },
   "scripts": {
-    "main": "node index.js"
+    "main": "node index.js",
+    "test": "istanbul cover ./test/*.js --print both"
   },
   "author": "cyrusn",
   "license": "ISC"
