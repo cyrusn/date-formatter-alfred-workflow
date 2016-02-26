@@ -13,7 +13,7 @@
 ## Example
 
 - `date` => show today
-- `date 21` => show 21st of this month
+- `date 21` => show the date of coming 21st
 - `date 5d` => show the date 5 days later
 - `date -3w` => show the date 3 weeks before
 - `date 12-12-2016` => show the date of 12 Dec 2016
