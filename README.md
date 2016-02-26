@@ -12,8 +12,13 @@
 
 ## Example
 
-- `date` => show today
-- `date 21` => show the date of coming 21st
-- `date 5d` => show the date 5 days later
-- `date -3w` => show the date 3 weeks before
-- `date 12-12-2016` => show the date of 12 Dec 2016
+- `d` => show today
+- `d 21` => show the date of coming 21st
+- `d 12-12-2016` => show the date of 12 Dec 2016
+
+you can add and subtract days, months, weeks, quaters and years on specified date
+- `d -d 5` => show the date 5 days later of today
+- `d 13 -w -3` => show the date 3 weeks before coming 13th
+- `d 12-12 -q 3` => show the date 3 quarter later of coming 12/12
+- `d 12-12-2014 -y 1` => show the date 1 year later 12/12/2014
+- `d -d 1 -w 2 -y 1` => show the 1 day, 2 weeks and 1 year later of today

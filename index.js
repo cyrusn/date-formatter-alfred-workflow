@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-
-const query = process.argv[2];
+const argv = require('yargs').number(['_']).argv;
 const FormatList = require('./config');
 const addItem2XML = require('./lib').addItem2XML;
 const parseQuery = require('./lib').parseQuery;
@@ -12,7 +11,7 @@ const xml = Builder.create('items');
 run();
 
 function run () {
-  const parsedQuery = parseQuery(query);
+  const parsedQuery = parseQuery(argv);
   FormatList.forEach(format => {
     const date = convertDateFormat(parsedQuery, format);
     addItem2XML(xml, date);

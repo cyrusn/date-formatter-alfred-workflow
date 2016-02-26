@@ -6,7 +6,8 @@
   "dependencies": {
     "chinese-date-formatter": "^1.0.6",
     "moment": "^2.10.6",
-    "xmlbuilder": "^3.0.0"
+    "xmlbuilder": "^3.0.0",
+    "yargs": "^4.2.0"
   },
   "devDependencies": {
     "istanbul": "^0.4.2",
