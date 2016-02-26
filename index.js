@@ -14,7 +14,7 @@ run();
 function run () {
   const parsedQuery = parseQuery(query);
   FormatList.forEach(format => {
-    const date = convertDateFormat(parsedQuery, format)
+    const date = convertDateFormat(parsedQuery, format);
     addItem2XML(xml, date);
   });
 
